@@ -1,0 +1,160 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,800);
+
+html {
+	font-size: 16px;
+	font-family: "Open Sans", "Sans Serif";
+}
+
+/***********************************************
+ HEADING
+ ***********************************************/
+
+ h3 {
+ 	margin: 0;
+ }
+
+ a {
+ 	text-decoration: none;
+ 	color: #2786B7;
+ }
+
+ img {
+ 	max-width: 100%;
+ }
+
+ #container {
+ 	max-width: 960px;
+ 	margin: 0px auto;
+ 	padding: 0 5%;
+ }
+
+ footer {
+ 	text-align: center;
+ 	margin: 0 auto;
+ 	font-size: 0.75em;
+ 	padding-top: 50px;
+ 	color: #ccc;
+ 	clear: both;
+ }
+
+ #gallery {
+ 	margin: 0;
+ 	padding: 0;
+ 	list-style: none;
+ }
+
+ #gallery li {
+ 	float: left;
+ 	width: 45%;
+ 	margin: 2.5%;
+ 	background-color: #f5f5f5;
+ 	color: #6b6b6b;
+ }
+
+ #gallery li a p {
+ 	margin: 0;
+ 	padding: 5%;
+ 	font-size: 0.75em;
+ 	color: #6b6b6b;
+ }
+
+ body {
+ 	background: #FFF;
+ }
+
+ header {
+ 	background: #1F98AB ;
+ 	border-color: #18869E;
+ 	float: left;
+ 	margin: 0 0 30px 0;
+ 	padding: 5px 0 0 0;
+ 	width: 100%;
+ }
+
+ #logo {
+ 	text-align: center;
+ 	margin: 0 5%;
+ }
+
+ h1 {
+ 	color: #FEFEFE;
+ 	margin: 15px 0;
+ 	font-size: 1.75em;
+ 	font-weight: normal;
+ 	line-height: 0.8em;
+ }
+
+ h2 {
+ 	color: #F5f5f5;
+ }
+
+ nav {
+ 	background: #18869E;
+ 	text-align: center;
+ }
+
+ nav ul {
+ 	list-style: none;
+ 	margin: 0 10px;
+ 	padding: 0;
+ }
+
+ nav li {
+ 	display: inline-block;
+ 	font-weight: 600;
+ 	padding: 5px 0;
+ 	font-size: .95em;
+ }
+
+ nav a, nav a:visited {
+ 	color: #FEFEFE;
+ }
+
+ nav a {
+ 	padding: 15px 10px;
+ }
+
+ nav a.active, nav a:hover {
+ 	color: #0E6376;
+ 	transition: color 200ms ease;
+ }
+
+ .social {
+ 	list-style: none;
+	margin-left: -33px;
+}
+
+ .social li {
+ 	display: inline-block;
+ 	padding: 0 5px;
+ }
+
+ .social img:hover {
+ 	filter: gray; /* IE6-9 */
+ 	filter: grayscale(1); /* Firefox 35+ */
+ 	-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+ }
+
+ .social img {
+ 	width: 35px;
+ }
+
+#overlay {
+	background: rgba(0, 0, 0, .7);
+ 	width: 100%;
+ 	height: 100%;
+ 	top: 0;
+ 	left: 0;
+	position: fixed; /* keeps the lightbox window in the current viewport */
+ 	display: none;
+ 	text-align: center;
+ }
+
+#overlay img {
+	margin-top: 6%;
+	max-width: 40%;
+}
+
+#overlay p {
+	color: #FFF;
+}
