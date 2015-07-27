@@ -22,7 +22,7 @@ $("#gallery a").click(function(event) {
 
 
 
-	$overlay.show();
+	$overlay.fadeIn(350);
 
 	$caption.text(captionLocation);
 });
