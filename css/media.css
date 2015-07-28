@@ -1,14 +1,69 @@
 /* Mobile Styles */
 @media only screen and (max-width: 480px) {
-
+	nav .fa {
+		display: none;
+	}
+	#contact h3 {
+	padding-top: 20px;
+}
 }
 
 /* Tablet Styles */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+	#contact h3 {
+		padding-top: 20px;
+	}
 
+	#gallery li {
+		width: 28.333%;
+	}
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 769px) {
-	
+/* 	#info {
+	width: 45%;
+	float: left;
+}
+
+#contact {
+	width: 40%;
+	float: right;
+} */
+
+	#gallery li {
+	width: 28.333%;
+	}
+
+	nav {
+		background: none;
+		float: right;
+		font-size: 1.125em;
+		margin-right: 5%;
+		text-align: right;
+		width: 44%;
+		
+	}
+
+
+
+	#logo {
+		float: left;
+		margin-left: 5%;
+		text-align: left;
+		width: 41%;
+	}
+
+	h1 {
+		font-size: 2.5em;
+	}
+
+	h2 {
+		font-size: .85em;
+	}
+
+	header {
+		border-bottom: 2px solid #18869E;
+		margin-bottom: 60px;
+	}
 }

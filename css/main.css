@@ -1,17 +1,14 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,800);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,500,600);
 
 html {
 	font-size: 16px;
 	font-family: "Open Sans", "Sans Serif";
+	color: #787878;
 }
 
 /***********************************************
  HEADING
  ***********************************************/
-
- h3 {
- 	margin: 0;
- }
 
  a {
  	text-decoration: none;
@@ -30,10 +27,10 @@ html {
 
  footer {
  	text-align: center;
- 	margin: 0 auto;
+ 	margin: 0 auto;
  	font-size: 0.75em;
  	padding-top: 50px;
- 	color: #ccc;
+ 	color: #787878;
  	clear: both;
  }
 
@@ -59,12 +56,15 @@ html {
  }
 
  body {
- 	background: #FFF;
+ 	background: #EFEFEF;
+ }
+
+ body p {
+ 	font-size: .9em;
  }
 
  header {
- 	background: #1F98AB ;
- 	border-color: #18869E;
+ 	background: #1F98AB;
  	float: left;
  	margin: 0 0 30px 0;
  	padding: 5px 0 0 0;
@@ -74,22 +74,32 @@ html {
  #logo {
  	text-align: center;
  	margin: 0 5%;
+ 	line-height: .8em;
  }
 
  h1 {
  	color: #FEFEFE;
- 	margin: 15px 0;
- 	font-size: 1.75em;
- 	font-weight: normal;
- 	line-height: 0.8em;
+ 	font-size: 165%;
+ 	font-weight: 700;
  }
 
  h2 {
  	color: #F5f5f5;
+	font-size: 130%;
+	font-weight: 300;
+ }
+
+ h3, h4 { 
+	color: #686868;
+	margin: 0;
+	font-weight: 500;
+	font-size: 1.25em;
  }
 
  nav {
  	background: #18869E;
+ 	padding: 10px 0;
+ 	margin: 20px 0 0 ;
  	text-align: center;
  }
 
@@ -101,9 +111,11 @@ html {
 
  nav li {
  	display: inline-block;
- 	font-weight: 600;
- 	padding: 5px 0;
- 	font-size: .95em;
+ 	font-weight: 700;
+ 	
+ 	font-size: .8em;
+ 	font-variant: small-caps;
+ 	letter-spacing: 1px;
  }
 
  nav a, nav a:visited {
@@ -157,4 +169,175 @@ html {
 
 #overlay p {
 	color: #FFF;
+}
+
+nav .fa	{
+	padding-right: 3px;
+}
+
+#contact-info { 
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+}
+
+#contact .fa {
+	color: #838383;
+	display: inline;
+	min-height: 20px;
+	font-size: 20px 20px;
+	padding: 0 10px 0 0px;
+	margin: 0 0 10px;
+}
+
+#contact-info {
+	padding-top: 10px;
+	line-height: 1.8em;
+	list-style: none;
+}
+
+.profile-photo {
+	display: block;
+	clear: both;
+	max-width: 150px;
+	margin: 0 auto 40px;
+	border-radius: 100%;
+}
+
+
+#about-section {
+	line-height: 1.8em;
+	width: 65%;
+	margin: 0 auto;
+}
+
+#contact-info form {
+	max-width: 300px;
+	margin: 20px auto;
+	padding: 20px;
+	border-radius: 8px;
+}
+
+#contact-info form h1 {
+	margin: 0 0 30px 0;
+	text-align: center;
+}
+
+#contact-info form input,
+#contact-info form textarea,
+#contact-info form select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 1em;
+  border: 1px solid #CEE1E8;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 90%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+#contact-info form input:focus
+#contact-info form select:focus
+#contact-info form textarea:focus {
+	border: 1px solid #AFCDD8;
+	background-color: #EBF2F4;
+}
+
+#contact-info form label {
+	display: block;
+}
+
+#contact-info form .required {
+	font-weight: bold;
+	color: #F00;
+}
+
+#submit-button {
+    width: 96px;
+    background-color: #333;
+    color: #FFF;
+    border: none;
+    display: block;
+    float: right;
+    margin-bottom: 0px;
+    margin-right: 6px;
+    background-color: #6099b1;
+    -moz-border-radius: 8px;
+}
+
+#submit-button:hover {
+	background: #A6CFDD;
+}
+
+#errors {
+    border:solid 1px #E58E8E;
+    padding:10px;
+    margin:25px 0px;
+    display:block;
+    width:437px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    background:#FFE6E6 url(../img/cancel_48.png) no-repeat 405px center;
+    display:none;
+}
+#errors li {
+    padding:2px;
+    list-style:none;
+}
+#errors li:before {
+    content: ' - ';
+}
+#errors #info {
+    font-weight:bold;
+}
+#errors #info:before {
+    content: '';
+}
+#success {
+    border:solid 1px #83D186;
+    padding:25px 10px;
+    margin:25px 0px;
+    display:block;
+    width:437px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    background:#D3EDD3 url(../img/accepted_48.png) no-repeat 405px center;
+    font-weight:bold;
+    display:none;
+}
+#errors.visible, #success.visible {
+    display:block;
+}
+#req-field-desc {
+    font-style:italic;
+}
+/* Remove box shadow firefox, chrome and opera put around required fields. It looks rubbish. */
+input:required, textarea:required {
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    -o-box-shadow:none;
+    box-shadow:none;
+}
+/* Normalize placeholder styles */
+/* chrome, safari */
+::-webkit-input-placeholder {
+    color:#CCC;
+    font-style:italic;
+}
+/* mozilla */
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color:#CCC;
+    font-style:italic;
+}
+/* ie (faux placeholder) */
+input.placeholder-text, textarea.placeholder-text  {
+    color:#CCC;
+    font-style:italic;
 }
