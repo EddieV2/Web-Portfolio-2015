@@ -1,35 +1,54 @@
 /* Mobile Styles */
 @media only screen and (max-width: 480px) {
+	
 	nav .fa {
 		display: none;
 	}
+	
 	#contact h3 {
 	padding-top: 20px;
-}
+	}
+	
+	nav {
+		width: 100%;
+	}
+
+	nav ul {
+		width: 100%;
+	}
+
+	nav li {
+		padding: 0 15px;
+	}
+
+	#about-section {
+		width: 90%;
+	}
+
+	#about-section p {
+		font-size: .8em;
+	}
+
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-	#contact h3 {
+@media only screen and (min-width: 481px) and (max-width: 899px) {
+	
+	#contact h3 {
 		padding-top: 20px;
 	}
 
 	#gallery li {
 		width: 28.333%;
 	}
+
+	nav {
+		width: 100%;
+	}
 }
 
 /* Desktop Styles */
-@media only screen and (min-width: 769px) {
-/* 	#info {
-	width: 45%;
-	float: left;
-}
-
-#contact {
-	width: 40%;
-	float: right;
-} */
+@media only screen and (min-width: 900px) {
 
 	#gallery li {
 	width: 28.333%;
@@ -38,11 +57,15 @@
 	nav {
 		background: none;
 		float: right;
-		font-size: 1.125em;
+		font-size: 1em;
 		margin-right: 5%;
 		text-align: right;
-		width: 44%;
-		
+		width: 45%;
+		overflow: hidden;
+	}
+
+	nav li {
+		padding: 0 10px;
 	}
 
 
@@ -51,7 +74,7 @@
 		float: left;
 		margin-left: 5%;
 		text-align: left;
-		width: 41%;
+		width: 40%;
 	}
 
 	h1 {
