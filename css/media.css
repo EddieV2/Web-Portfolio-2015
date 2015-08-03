@@ -1,6 +1,14 @@
 /* Mobile Styles */
 @media only screen and (max-width: 480px) {
 	
+	#gallery li:nth-child(3) {
+		clear: left;
+	}
+
+	#gallery li:nth-child(4) {
+		clear: right;
+	}
+	
 	nav .fa {
 		display: none;
 	}
@@ -59,6 +67,14 @@
 
 	#gallery li {
 		width: 28.333%;
+	}
+
+	#gallery li:nth-child(3) {
+		clear: none;
+	}
+
+	#gallery li:nth-child(4) {
+		clear: left;
 	}
 
 	nav {

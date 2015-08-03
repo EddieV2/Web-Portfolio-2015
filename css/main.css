@@ -43,10 +43,15 @@ html {
  #gallery li {
  	float: left;
  	width: 43%;
+ 	max-width: 331px;
  	margin: 2.3%;
  	background-color: #EEE;
  	color: #6b6b6b;
  	border: 1px solid #CCC;
+ }
+
+ #gallery li:nth-child(4) {
+ 	clear: left;
  }
 
  #gallery li a p {
@@ -165,7 +170,7 @@ html {
  }
 
 #overlay img {
-	margin-top: 6%;
+	margin-top: 5%;
 	max-width: 40%;
 }
 

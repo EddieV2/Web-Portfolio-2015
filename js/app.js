@@ -5,6 +5,7 @@
 
 var $overlay = $('<div id="overlay"></div>');
 var $image = $('<img>');
+var $overlayimg = $('#overlay img');
 var $caption = $('<p></p>');
 var $captionLocation = $('#gallery a').children('p').text();
 
@@ -24,11 +25,16 @@ $("#gallery a").click(function(event) {
 
 
 
-	$overlay.fadeIn(350);
 
+	$overlay.fadeIn(350);
+	
 	$caption.text(captionLocation);
 });
 
 $($overlay).click(function(event) {
 	$($overlay).hide();
 });
+
+// $($overlayimg).click(function(event) {
+	
+// });
